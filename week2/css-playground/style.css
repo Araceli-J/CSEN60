@@ -1,0 +1,12 @@
+/*
+order of precendence 
+1.  inline styles
+2.  internal styles
+3.  external styles
+
+caveat !important will overide any precedence
+ */
+p {
+    color:purple !important;
+    /* background-color: orange; */
+}
