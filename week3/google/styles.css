@@ -16,7 +16,7 @@ ul{
 
 header, footer{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;  
 }
 
 button{
@@ -34,13 +34,13 @@ button{
     align-items: center;
 }
 
-main{
+body{
     display:flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    height:100vh;
 }
 
-footer{
-    position: absolute;
-    bottom: 0;
+main{
+    align-self:center;
 }
