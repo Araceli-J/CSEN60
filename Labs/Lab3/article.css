@@ -1,0 +1,67 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    gap: 1rem;
+}
+body{
+    height:100vh;
+    width: 100vw;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+article{
+    width: 50%;
+}
+
+footer nav a:not(:last-child)::after {
+    content: "•";
+    padding-left: .2rem;
+    padding-right: .2rem;
+}
+
+button{
+    width:2rem;
+    height:2rem;
+}
+
+footer nav{
+    background-color: white;
+    display: flex;
+    gap: 1rem;
+    color: grey;
+    text-align: none;
+
+}
+
+h1{
+    color:#073164;
+}
+
+.secondary{
+    color: #ccc;
+}
+
+.primary{
+    color:#2e86de;
+}
+
+time{
+    color:#ccc;
+}
+
+a {
+    text-decoration: none;
+}
+
+.highlight{
+    background-color: #2e86de;
+}
