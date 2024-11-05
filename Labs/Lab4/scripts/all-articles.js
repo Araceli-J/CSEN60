@@ -6,7 +6,11 @@ let parentElement = null;
 const tagLists = Array.from(document.querySelectorAll("article .tags"));
 
 // Search Functions
-
+/**
+ * retrieves the paramter given to tag in the URL
+ * if the tag is null (new parent element) then there is an error and the function is exited
+ * the tag is also created and searched for 
+ */
 function initializeSearch(newParentElement) {
   const params = new URLSearchParams(window.location.search);
   if (newParentElement === null) {
@@ -23,7 +27,11 @@ function initializeSearch(newParentElement) {
   }
 }
 
-
+/**
+ * displays and hides articles based on the tag searched
+ * if  no tag is search for all articles are visible
+ * for the tags, it goes through a loop and finds the articles with the tags and hides the other 
+ */
 function hideArticles() {
   if (searchTags.length === 0) {
     for (const article of document.querySelectorAll("article")) {
@@ -69,6 +77,9 @@ function createTag(text) {
   button.classList.add("tag");
   button.textContent = text;
 
+  /**
+   * removes the tag button
+   */
   function remove() {
     button.remove();
     const index = searchTags.indexOf(text);
@@ -87,6 +98,9 @@ function createTag(text) {
   return button;
 }
 
+/**
+ * finds the articles with the tag and returns them
+ */
 function findArticlesWithTag(phrase) {
   const articles = [];
   const sanitizedPhrase = phrase.toLowerCase().trim();
@@ -103,7 +117,9 @@ function findArticlesWithTag(phrase) {
   return articles;
 }
 
-
+/**
+ * when there is already a search term, it creates another search term to find articles with
+ */
 function addSearchTerm(text) {
   parentElement.appendChild(createTag(text));
   searchTags.push(text);
@@ -112,6 +128,9 @@ function addSearchTerm(text) {
 
 // Handlers
 
+/**
+ * the tag searched is added when the enter key is pressed 
+ */
 function onSearch(event) {
   const input = event.currentTarget;
   /**
@@ -127,6 +146,10 @@ function onSearch(event) {
 
 // Main function
 
+/**
+ * initializes the search
+ */
+
 function main() {
   initializeSearch(document.querySelector("#searched-tags"));
 
@@ -140,7 +163,7 @@ main();
 
 /**
  * Order of execution for each event:
- * Pressing Enter: 
- * Clicking to Remove a Tag: 
- * Loading the Page: 
+ * Pressing Enter: onsearch is called --> tag is added searchTag --> articles with tag displayed, other articles are hidden in hideArticles()
+ * Clicking to Remove a Tag: remove() is called --> tag is removed from searchTags and the DOM --> either all articles are displayed or the articles without that tag is diplayed if there are other search terms
+ * Loading the Page: main() is executed --> initializeSearch is then called --> onsearch is also called 
  */
