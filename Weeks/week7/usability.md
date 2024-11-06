@@ -4,13 +4,13 @@
 
 ### h3
 
-the
+
 
 - bullet point
 - 
 
 ## Notes
-- 
+- 10 heuristic principles
 
 ## Exercise
 - bad navigation
