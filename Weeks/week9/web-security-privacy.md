@@ -10,3 +10,8 @@
 ## privacy
 - cooookiiiiessss
 - privacy policy
+- SSL uses both encryption types and provides for secure transmission of data 
+- digital certificate 
+- html event listners
+- ads to get money
+- free product in exchange for information on the user 
