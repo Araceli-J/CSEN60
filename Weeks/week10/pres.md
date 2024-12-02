@@ -1,0 +1,10 @@
+- etsy
+    - 3 pages, lots of js for carousel, dropdowns, and the clicking heart for it to change colours
+- pop mart 
+    - box method
+    - node js
+- netflix
+    - used lots of different online resources to get the page working
+    - very complex, with drop downs and hovers on new show
+- twitter
+    - using cookie for storage and put in comments actively in their server as cookies 
