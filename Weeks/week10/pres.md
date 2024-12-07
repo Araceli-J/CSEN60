@@ -8,3 +8,7 @@
     - very complex, with drop downs and hovers on new show
 - twitter
     - using cookie for storage and put in comments actively in their server as cookies 
+- nike
+    - tailwind and paypal takes you to paypal
+- math13 website
+    - redid it completely 
