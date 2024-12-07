@@ -12,3 +12,7 @@
     - tailwind and paypal takes you to paypal
 - math13 website
     - redid it completely 
+-bluey
+    - audio clip added in
+-pinterest
+    - allows for pins to be saved and stored
